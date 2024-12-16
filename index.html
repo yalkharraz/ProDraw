@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProDraw - Advanced Drawing App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>ProDraw</h1>
+    </header>
+    <div class="toolbar">
+        <div class="tool-section">
+          <label for="toolPicker">Tool:</label>
+          <select id="toolPicker">
+            <option value="draw">Freehand</option>
+            <option value="rectangle">Rectangle</option>
+            <option value="circle">Circle</option>
+            <option value="eraser">Eraser</option>
+            <option value="select">Select</option>
+          </select>
+        </div>
+      
+        <div class="tool-section">
+          <label for="colorPicker">Color:</label>
+          <input type="color" id="colorPicker" value="#000000">
+        </div>
+      
+        <div class="tool-section">
+          <label for="brushSize">Brush Size:</label>
+          <input type="range" id="brushSize" min="1" max="50" value="5">
+        </div>
+      
+        <div class="tool-section">
+          <button id="fillShapeBtn">Fill: Off</button>
+          <button id="clearBtn">Clear</button>
+        </div>
+      
+        <div class="tool-section">
+          <label for="backgroundUpload">Background:</label>
+          <input type="file" id="backgroundUpload" accept="image/*">
+        </div>
+      
+        <div class="tool-section">
+            <button id="undoBtn"><i class="fas fa-undo"></i> Undo</button>
+            <button id="redoBtn"><i class="fas fa-redo"></i> Redo</button>
+        </div>
+      
+        <div class="tool-section">
+            <button id="saveBtn"><i class="fas fa-save"></i> Save</button>
+            <button id="exportPdfBtn"><i class="fas fa-file-pdf"></i> Export PDF</button>
+        </div>
+      </div>
+      
+
+    <canvas id="drawingCanvas"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
