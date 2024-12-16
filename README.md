@@ -15,4 +15,4 @@ A feature-rich browser-based drawing application built with HTML5 Canvas, JavaSc
 - jsPDF for PDF export
 
 ## Demo
-[Live Demo Link](https://yalkharraz.github.io/ProDraw-Drawing-App/)
+[Live Demo Link](https://yalkharraz.github.io/ProDraw/)
